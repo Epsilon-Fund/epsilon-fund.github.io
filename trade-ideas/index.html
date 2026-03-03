@@ -1,0 +1,142 @@
+---
+layout: default
+title: Trade Ideas
+---
+
+{% assign all_trades = site.trade_ideas | sort: "date" | reverse %}
+{% assign a_trades = all_trades | where: "author", "A" %}
+{% assign j_trades = all_trades | where: "author", "J" %}
+{% assign d_trades = all_trades | where: "author", "D" %}
+
+{% assign a_wins = a_trades | where: "status", "Won" | size %}
+{% assign a_losses = a_trades | where: "status", "Lost" | size %}
+{% assign j_wins = j_trades | where: "status", "Won" | size %}
+{% assign j_losses = j_trades | where: "status", "Lost" | size %}
+{% assign d_wins = d_trades | where: "status", "Won" | size %}
+{% assign d_losses = d_trades | where: "status", "Lost" | size %}
+
+<div class="sticky-scoreboard">
+  <div class="scoreboard-inner">
+    <div class="scoreboard-cell">
+      <span class="scoreboard-name">A</span>
+      <div class="scoreboard-numbers">
+        <div class="scoreboard-stat">
+          <span class="number wins">{{ a_wins }}</span>
+          <span class="micro-label">Won</span>
+        </div>
+        <div class="scoreboard-stat">
+          <span class="number losses">{{ a_losses }}</span>
+          <span class="micro-label">Lost</span>
+        </div>
+      </div>
+      {% if a_trades.size > 0 %}
+        {% assign a_winrate = a_wins | times: 100 | divided_by: a_trades.size %}
+        <span class="scoreboard-winrate">{{ a_winrate }}%</span>
+      {% else %}
+        <span class="scoreboard-winrate neutral">—</span>
+      {% endif %}
+    </div>
+
+    <div class="scoreboard-cell">
+      <span class="scoreboard-name">J</span>
+      <div class="scoreboard-numbers">
+        <div class="scoreboard-stat">
+          <span class="number wins">{{ j_wins }}</span>
+          <span class="micro-label">Won</span>
+        </div>
+        <div class="scoreboard-stat">
+          <span class="number losses">{{ j_losses }}</span>
+          <span class="micro-label">Lost</span>
+        </div>
+      </div>
+      {% if j_trades.size > 0 %}
+        {% assign j_winrate = j_wins | times: 100 | divided_by: j_trades.size %}
+        <span class="scoreboard-winrate">{{ j_winrate }}%</span>
+      {% else %}
+        <span class="scoreboard-winrate neutral">—</span>
+      {% endif %}
+    </div>
+
+    <div class="scoreboard-cell">
+      <span class="scoreboard-name">D</span>
+      <div class="scoreboard-numbers">
+        <div class="scoreboard-stat">
+          <span class="number wins">{{ d_wins }}</span>
+          <span class="micro-label">Won</span>
+        </div>
+        <div class="scoreboard-stat">
+          <span class="number losses">{{ d_losses }}</span>
+          <span class="micro-label">Lost</span>
+        </div>
+      </div>
+      {% if d_trades.size > 0 %}
+        {% assign d_winrate = d_wins | times: 100 | divided_by: d_trades.size %}
+        <span class="scoreboard-winrate">{{ d_winrate }}%</span>
+      {% else %}
+        <span class="scoreboard-winrate neutral">—</span>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<div class="container" style="margin-top: 48px;">
+  <div class="page-hero animate-in">
+    <span class="label">Epsilon Fund</span>
+    <h1>Trade Ideas</h1>
+    <p>Live and historical trade ideas with full thesis, risk management, and outcome tracking.</p>
+  </div>
+
+  <hr class="divider">
+
+  <div class="animate-in-delay-1">
+    {% if all_trades.size > 0 %}
+      {% for trade in all_trades %}
+      <a href="{{ trade.url }}" style="text-decoration: none;">
+        <div class="trade-idea-card">
+          <div>
+            <div class="trade-idea-header">
+              <span class="trade-asset">{{ trade.asset }}</span>
+              <span class="trade-direction {{ trade.direction | downcase }}">{{ trade.direction }}</span>
+              <span class="tag tag--{{ trade.status | downcase }}">{{ trade.status }}</span>
+            </div>
+            <p class="trade-thesis">{{ trade.thesis_short }}</p>
+            <div class="trade-specs">
+              <div class="trade-spec">
+                <span class="spec-label">Entry</span>
+                <span class="spec-value">{{ trade.entry }}</span>
+              </div>
+              <div class="trade-spec">
+                <span class="spec-label">Target</span>
+                <span class="spec-value">{{ trade.target_1 }}</span>
+              </div>
+              <div class="trade-spec">
+                <span class="spec-label">Stop</span>
+                <span class="spec-value">{{ trade.stop }}</span>
+              </div>
+              <div class="trade-spec">
+                <span class="spec-label">Author</span>
+                <span class="spec-value">{{ trade.author }}</span>
+              </div>
+            </div>
+          </div>
+          <div class="conviction-bar">
+            <span class="conviction-label">Conviction</span>
+            <span class="conviction-score">{{ trade.conviction }}</span>
+            <div class="conviction-track">
+              <div class="conviction-fill" style="height: {{ trade.conviction }}0%;"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    {% else %}
+      <div class="trade-idea-card">
+        <div>
+          <div class="trade-idea-header">
+            <span class="trade-asset" style="color: var(--text-muted);">First trade idea coming soon</span>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+<div class="container--narrow">
+
+  <div class="page-hero animate-in">
+    <div class="post-meta" style="margin-bottom: 20px;">
+      <span class="tag tag--{{ page.status | downcase }}">{{ page.status }}</span>
+      <span class="label">{{ page.date | date: "%b %d, %Y" }}</span>
+      {% if page.author %}
+      <span class="label">— {{ page.author }}</span>
+      {% endif %}
+    </div>
+
+    <div class="trade-idea-header">
+      <span class="trade-asset">{{ page.asset }}</span>
+      <span class="trade-direction {{ page.direction | downcase }}">{{ page.direction }}</span>
+    </div>
+
+    {% if page.thesis_short %}
+    <p class="hero-description">{{ page.thesis_short }}</p>
+    {% endif %}
+  </div>
+
+  <hr class="divider">
+
+  <div class="animate-in-delay-1" style="margin-bottom: 48px;">
+    <div class="trade-specs" style="margin-bottom: 32px;">
+      <div class="trade-spec">
+        <span class="spec-label">Entry</span>
+        <span class="spec-value">{{ page.entry }}</span>
+      </div>
+      <div class="trade-spec">
+        <span class="spec-label">Target 1</span>
+        <span class="spec-value">{{ page.target_1 }}</span>
+      </div>
+      <div class="trade-spec">
+        <span class="spec-label">Target 2</span>
+        <span class="spec-value">{{ page.target_2 }}</span>
+      </div>
+      <div class="trade-spec">
+        <span class="spec-label">Stop Loss</span>
+        <span class="spec-value">{{ page.stop }}</span>
+      </div>
+      <div class="trade-spec">
+        <span class="spec-label">Timeframe</span>
+        <span class="spec-value">{{ page.timeframe }}</span>
+      </div>
+      <div class="trade-spec">
+        <span class="spec-label">Position Size</span>
+        <span class="spec-value">{{ page.position_size }}</span>
+      </div>
+      <div class="trade-spec">
+        <span class="spec-label">Risk / Reward</span>
+        <span class="spec-value">{{ page.risk_reward }}</span>
+      </div>
+      <div class="trade-spec">
+        <span class="spec-label">Conviction</span>
+        <span class="spec-value" style="color: var(--accent);">{{ page.conviction }}/10</span>
+      </div>
+    </div>
+
+    {% assign conviction_width = page.conviction | times: 10 %}
+    <div class="conviction-bar" style="flex-direction: row; align-items: center; gap: 16px; justify-content: flex-start;">
+      <span class="conviction-label">Conviction</span>
+      <div class="conviction-track" style="width: 120px; height: 4px;">
+        <div class="conviction-fill" style="height: 100%; width: {{ page.conviction }}0%; top: 0; bottom: auto;"></div>
+      </div>
+      <span class="conviction-score" style="font-size: 1rem;">{{ page.conviction }}/10</span>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <article class="post-content animate-in-delay-2">
+    {{ content }}
+  </article>
+
+</div>

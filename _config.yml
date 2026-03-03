@@ -1,0 +1,68 @@
+# ============================================
+# EPSILON FUND — SITE CONFIGURATION
+# ============================================
+
+# Core site settings
+title: Epsilon Fund
+description: Systematic crypto research and quantitative strategy development
+url: "https://epsilon-fund.github.io"
+baseurl: ""
+
+# Author info
+author:
+  name: Epsilon Fund
+  email: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections — this is what powers our content sections
+collections:
+  research:
+    output: true
+    permalink: /research/:path/
+  trade_ideas:
+    output: true
+    permalink: /trade-ideas/:path/
+
+# Default front matter for each content type
+defaults:
+  - scope:
+      path: ""
+      type: "research"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "trade_ideas"
+    values:
+      layout: "trade"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+
+# Navigation — controls what appears in the menu
+navigation:
+  - title: "Our Fund"
+    url: "/fund/"
+  - title: "Research"
+    url: "/research/"
+  - title: "Trade Ideas"
+    url: "/trade-ideas/"
+    
