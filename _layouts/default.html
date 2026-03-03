@@ -30,6 +30,11 @@
           </li>
           {% endfor %}
         </ul>
+        <button class="nav-toggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
 
       <main class="site-main">
@@ -47,6 +52,14 @@
 
     </div>
   </div>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  if (toggle) {
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+  }
+</script>
 
 </body>
 </html>
