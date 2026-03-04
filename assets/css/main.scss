@@ -756,6 +756,103 @@ strong { color: var(--text-primary); font-weight: 500; }
   transition: height 1s ease;
 }
 
+/* ─── CURSOR GLOW ────────────────────────────────── */
+
+.cursor-glow {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(74, 158, 255, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  transition: left 0.1s ease, top 0.1s ease;
+}
+
+/* ─── HERO TITLE COLORS ──────────────────────────── */
+
+.hero-title-dim {
+  color: var(--text-secondary);
+}
+
+.hero-status {
+  color: var(--text-muted);
+  font-size: 0.85em;
+}
+
+.accent { color: var(--accent); }
+
+/* ─── TICKER ─────────────────────────────────────── */
+
+.ticker-wrap {
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-secondary);
+  padding: 12px 0;
+  margin-top: 80px;
+  position: relative;
+}
+
+.ticker-wrap::before,
+.ticker-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 2;
+}
+
+.ticker-wrap::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-secondary), transparent);
+}
+
+.ticker-wrap::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-secondary), transparent);
+}
+
+.ticker {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  white-space: nowrap;
+  animation: ticker-scroll 30s linear infinite;
+}
+
+.ticker:hover { animation-play-state: paused; }
+
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.ticker-item {
+  font-size: 0.68rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  padding: 0 20px;
+}
+
+.ticker-sep {
+  color: var(--border);
+  font-size: 0.6rem;
+}
+
+.ticker-val {
+  color: var(--text-secondary);
+  margin-left: 6px;
+}
+
+.ticker-val.green { color: var(--green); }
+.ticker-val.red   { color: var(--red); }
+
 /* ─── MOBILE ─────────────────────────────────────── */
 
 @media (max-width: 900px) {
@@ -822,4 +919,6 @@ strong { color: var(--text-primary); font-weight: 500; }
   .trade-idea-card { grid-template-columns: 1fr; }
 
   .conviction-bar { display: none; }
+
+  .cursor-glow { display: none; }
 }

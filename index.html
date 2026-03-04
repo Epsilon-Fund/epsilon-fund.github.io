@@ -3,14 +3,27 @@ layout: default
 title: Home
 ---
 
+<!-- Mouse glow effect -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
 <div class="container">
   <section class="hero animate-in">
+
     <div class="hero-eyebrow">Epsilon Fund</div>
-    <h1 class="hero-title">Systematic <em>Research</em><br>& Crypto Strategy</h1>
+
+    <h1 class="hero-title">
+      Systematic<br>
+      <em>Research</em> &amp;<br>
+      <span class="hero-title-dim">Crypto Strategy</span>
+    </h1>
+
     <p class="hero-description">
-      A research-driven crypto fund focused on quantitative strategy development, 
-      macro analysis, and systematic trading. Fund I in development.
+      A <strong>research-driven</strong> crypto fund focused on
+      <strong>quantitative strategy development</strong>,
+      macro analysis, and systematic trading.
+      <span class="hero-status">Fund I in development.</span>
     </p>
+
     <div class="hero-cta">
       <a href="/fund/" class="btn">Our Fund</a>
       <a href="/research/" class="btn btn--ghost">Read Research</a>
@@ -18,17 +31,92 @@ title: Home
 
     <div class="hero-stats">
       <div class="hero-stat">
-        <div class="hero-stat-number">3<span>+</span></div>
+        <div class="hero-stat-number"><span class="count-up" data-target="3">0</span><span>+</span></div>
         <div class="hero-stat-label">Strategies In Development</div>
       </div>
       <div class="hero-stat">
-        <div class="hero-stat-number">2<span>+</span></div>
+        <div class="hero-stat-number"><span class="count-up" data-target="2">0</span><span>+</span></div>
         <div class="hero-stat-label">Research Verticals</div>
       </div>
       <div class="hero-stat">
-        <div class="hero-stat-number">365<span>/yr</span></div>
+        <div class="hero-stat-number"><span class="count-up" data-target="365">0</span><span class="accent">/yr</span></div>
         <div class="hero-stat-label">Markets We Cover</div>
       </div>
     </div>
+
   </section>
 </div>
+
+<!-- Scrolling ticker -->
+<div class="ticker-wrap">
+  <div class="ticker">
+    <span class="ticker-item">BTC <span class="ticker-val green">$87,240</span></span>
+    <span class="ticker-sep">·</span>
+    <span class="ticker-item">ETH <span class="ticker-val green">$3,180</span></span>
+    <span class="ticker-sep">·</span>
+    <span class="ticker-item">SOL <span class="ticker-val red">$142.80</span></span>
+    <span class="ticker-sep">·</span>
+    <span class="ticker-item">BTC DOMINANCE <span class="ticker-val">54.2%</span></span>
+    <span class="ticker-sep">·</span>
+    <span class="ticker-item">FEAR &amp; GREED <span class="ticker-val red">38 — Fear</span></span>
+    <span class="ticker-sep">·</span>
+    <span class="ticker-item">DXY <span class="ticker-val red">104.2</span></span>
+    <span class="ticker-sep">·</span>
+    <span class="ticker-item">10Y YIELD <span class="ticker-val red">4.42%</span></span>
+    <span class="ticker-sep">·</span>
+    <span class="ticker-item">GOLD <span class="ticker-val green">$2,318</span></span>
+    <span class="ticker-sep">·</span>
+    <!-- Repeat for seamless loop -->
+    <span class="ticker-item">BTC <span class="ticker-val green">$87,240</span></span>
+    <span class="ticker-sep">·</span>
+    <span class="ticker-item">ETH <span class="ticker-val green">$3,180</span></span>
+    <span class="ticker-sep">·</span>
+    <span class="ticker-item">SOL <span class="ticker-val red">$142.80</span></span>
+    <span class="ticker-sep">·</span>
+    <span class="ticker-item">BTC DOMINANCE <span class="ticker-val">54.2%</span></span>
+    <span class="ticker-sep">·</span>
+    <span class="ticker-item">FEAR &amp; GREED <span class="ticker-val red">38 — Fear</span></span>
+    <span class="ticker-sep">·</span>
+    <span class="ticker-item">DXY <span class="ticker-val red">104.2</span></span>
+    <span class="ticker-sep">·</span>
+    <span class="ticker-item">10Y YIELD <span class="ticker-val red">4.42%</span></span>
+    <span class="ticker-sep">·</span>
+    <span class="ticker-item">GOLD <span class="ticker-val green">$2,318</span></span>
+    <span class="ticker-sep">·</span>
+  </div>
+</div>
+
+<script>
+// Cursor glow
+const glow = document.getElementById('cursorGlow');
+document.addEventListener('mousemove', e => {
+  glow.style.left = e.clientX + 'px';
+  glow.style.top  = e.clientY + 'px';
+});
+
+// Count-up animation
+const counters = document.querySelectorAll('.count-up');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const target = parseInt(el.dataset.target);
+      const duration = 1200;
+      const step = target / (duration / 16);
+      let current = 0;
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) {
+          el.textContent = target;
+          clearInterval(timer);
+        } else {
+          el.textContent = Math.floor(current);
+        }
+      }, 16);
+      observer.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+
+counters.forEach(c => observer.observe(c));
+</script>
