@@ -3,6 +3,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap&subset=greek');
 
+@font-face {
+  font-family: 'DM Mono';
+  src: url('https://fonts.gstatic.com/s/dmmono/v14/aFTR7PB1QTsUX8KYth-orYataIf4.woff2') format('woff2');
+  font-weight: 300 500;
+  font-style: normal;
+  unicode-range: U+0370-03FF;
+}
+
 :root {
   --bg-primary: #080C14;
   --bg-secondary: #0D1117;
