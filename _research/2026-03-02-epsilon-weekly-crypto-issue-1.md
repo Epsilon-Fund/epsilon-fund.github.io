@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Epsilon Weekly Crypto — Issue #1"
+title: "εpsilon Weekly Crypto — Issue #1"
 date: 2026-03-02
 category: crypto
 author: A
