@@ -3,6 +3,9 @@ layout: default
 title: Home
 ---
 
+<!-- Background animation -->
+<canvas id="bgCanvas" class="bg-canvas"></canvas>
+
 <!-- Mouse glow effect -->
 <div class="cursor-glow" id="cursorGlow"></div>
 
@@ -12,9 +15,12 @@ title: Home
     <div class="hero-eyebrow">Epsilon Fund</div>
 
     <h1 class="hero-title">
-      Systematic<br>
-      <em>Research</em> &amp;<br>
-      <span class="hero-title-dim">Crypto Strategy</span>
+      Systematic Crypto<br>
+      <span class="rotating-words">
+        <span class="rotating-word">Research</span>
+        <span class="rotating-word">Strategy</span>
+        <span class="rotating-word">Fund</span>
+      </span>
     </h1>
 
     <p class="hero-description">
@@ -51,60 +57,138 @@ title: Home
 <div class="ticker-wrap">
   <div class="ticker">
     <span class="ticker-item">BTC <span class="ticker-val green">$87,240</span></span>
-    <span class="ticker-sep">·</span>
+    <span class="ticker-sep">&middot;</span>
     <span class="ticker-item">ETH <span class="ticker-val green">$3,180</span></span>
-    <span class="ticker-sep">·</span>
+    <span class="ticker-sep">&middot;</span>
     <span class="ticker-item">SOL <span class="ticker-val red">$142.80</span></span>
-    <span class="ticker-sep">·</span>
+    <span class="ticker-sep">&middot;</span>
     <span class="ticker-item">BTC DOMINANCE <span class="ticker-val">54.2%</span></span>
-    <span class="ticker-sep">·</span>
+    <span class="ticker-sep">&middot;</span>
     <span class="ticker-item">FEAR &amp; GREED <span class="ticker-val red">38 — Fear</span></span>
-    <span class="ticker-sep">·</span>
+    <span class="ticker-sep">&middot;</span>
     <span class="ticker-item">DXY <span class="ticker-val red">104.2</span></span>
-    <span class="ticker-sep">·</span>
+    <span class="ticker-sep">&middot;</span>
     <span class="ticker-item">10Y YIELD <span class="ticker-val red">4.42%</span></span>
-    <span class="ticker-sep">·</span>
+    <span class="ticker-sep">&middot;</span>
     <span class="ticker-item">GOLD <span class="ticker-val green">$2,318</span></span>
-    <span class="ticker-sep">·</span>
+    <span class="ticker-sep">&middot;</span>
     <!-- Repeat for seamless loop -->
     <span class="ticker-item">BTC <span class="ticker-val green">$87,240</span></span>
-    <span class="ticker-sep">·</span>
+    <span class="ticker-sep">&middot;</span>
     <span class="ticker-item">ETH <span class="ticker-val green">$3,180</span></span>
-    <span class="ticker-sep">·</span>
+    <span class="ticker-sep">&middot;</span>
     <span class="ticker-item">SOL <span class="ticker-val red">$142.80</span></span>
-    <span class="ticker-sep">·</span>
+    <span class="ticker-sep">&middot;</span>
     <span class="ticker-item">BTC DOMINANCE <span class="ticker-val">54.2%</span></span>
-    <span class="ticker-sep">·</span>
+    <span class="ticker-sep">&middot;</span>
     <span class="ticker-item">FEAR &amp; GREED <span class="ticker-val red">38 — Fear</span></span>
-    <span class="ticker-sep">·</span>
+    <span class="ticker-sep">&middot;</span>
     <span class="ticker-item">DXY <span class="ticker-val red">104.2</span></span>
-    <span class="ticker-sep">·</span>
+    <span class="ticker-sep">&middot;</span>
     <span class="ticker-item">10Y YIELD <span class="ticker-val red">4.42%</span></span>
-    <span class="ticker-sep">·</span>
+    <span class="ticker-sep">&middot;</span>
     <span class="ticker-item">GOLD <span class="ticker-val green">$2,318</span></span>
-    <span class="ticker-sep">·</span>
+    <span class="ticker-sep">&middot;</span>
   </div>
 </div>
 
 <script>
-// Cursor glow
-const glow = document.getElementById('cursorGlow');
-document.addEventListener('mousemove', e => {
+// ── Background particle animation ──
+(function() {
+  var canvas = document.getElementById('bgCanvas');
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+  var w, h;
+
+  function resize() {
+    w = canvas.width = window.innerWidth;
+    h = canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  var mobile = window.innerWidth < 900;
+  var COUNT = mobile ? 50 : 140;
+  var CONNECT_DIST = mobile ? 0 : 150;
+  var pts = [];
+
+  for (var i = 0; i < COUNT; i++) {
+    var bright = Math.random() < 0.2;
+    pts.push({
+      x: Math.random() * w,
+      y: Math.random() * h,
+      r: bright ? Math.random() * 2.5 + 1.8 : Math.random() * 1.4 + 0.5,
+      dx: Math.random() * 0.5 + 0.12,
+      dy: Math.random() * 0.25 + 0.05,
+      o: bright ? Math.random() * 0.3 + 0.25 : Math.random() * 0.18 + 0.05,
+      pulse: Math.random() * Math.PI * 2,
+      ps: Math.random() * 0.02 + 0.005
+    });
+  }
+
+  function frame() {
+    ctx.clearRect(0, 0, w, h);
+
+    for (var i = 0; i < pts.length; i++) {
+      var p = pts[i];
+      p.x += p.dx;
+      p.y += p.dy;
+      p.pulse += p.ps;
+
+      if (p.x > w + 30) { p.x = -30; p.y = Math.random() * h; }
+      if (p.y > h + 30) { p.y = -30; p.x = Math.random() * w; }
+
+      var alpha = p.o * (0.7 + 0.3 * Math.sin(p.pulse));
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(74,158,255,' + alpha + ')';
+      ctx.fill();
+    }
+
+    // Connection lines
+    if (CONNECT_DIST > 0) {
+      var cd2 = CONNECT_DIST * CONNECT_DIST;
+      for (var i = 0; i < pts.length; i++) {
+        for (var j = i + 1; j < pts.length; j++) {
+          var dx = pts[i].x - pts[j].x;
+          var dy = pts[i].y - pts[j].y;
+          var d2 = dx * dx + dy * dy;
+          if (d2 < cd2) {
+            var a = 0.09 * (1 - Math.sqrt(d2) / CONNECT_DIST);
+            ctx.beginPath();
+            ctx.moveTo(pts[i].x, pts[i].y);
+            ctx.lineTo(pts[j].x, pts[j].y);
+            ctx.strokeStyle = 'rgba(74,158,255,' + a + ')';
+            ctx.lineWidth = 0.5;
+            ctx.stroke();
+          }
+        }
+      }
+    }
+
+    requestAnimationFrame(frame);
+  }
+  frame();
+})();
+
+// ── Cursor glow ──
+var glow = document.getElementById('cursorGlow');
+document.addEventListener('mousemove', function(e) {
   glow.style.left = e.clientX + 'px';
   glow.style.top  = e.clientY + 'px';
 });
 
-// Count-up animation
-const counters = document.querySelectorAll('.count-up');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
+// ── Count-up animation ──
+var counters = document.querySelectorAll('.count-up');
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
     if (entry.isIntersecting) {
-      const el = entry.target;
-      const target = parseInt(el.dataset.target);
-      const duration = 1200;
-      const step = target / (duration / 16);
-      let current = 0;
-      const timer = setInterval(() => {
+      var el = entry.target;
+      var target = parseInt(el.dataset.target);
+      var duration = 1200;
+      var step = target / (duration / 16);
+      var current = 0;
+      var timer = setInterval(function() {
         current += step;
         if (current >= target) {
           el.textContent = target;
@@ -117,6 +201,5 @@ const observer = new IntersectionObserver(entries => {
     }
   });
 }, { threshold: 0.5 });
-
-counters.forEach(c => observer.observe(c));
+counters.forEach(function(c) { observer.observe(c); });
 </script>
