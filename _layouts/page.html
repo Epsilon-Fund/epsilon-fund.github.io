@@ -4,10 +4,9 @@ layout: default
 
 <div class="container">
   <div class="page-hero animate-in">
-    <span class="label">{{ page.label | default: "εpsilon" }}</span>
-    <h1>{{ page.title }}</h1>
+    <h1><span style="color: var(--accent);">{{ page.title | slice: 0 }}</span>{{ page.title | slice: 1, 100 }}</h1>
     {% if page.description %}
-    <p>{{ page.description }}</p>
+    <p style="margin-top: 8px;">{{ page.description }}</p>
     {% endif %}
   </div>
 
