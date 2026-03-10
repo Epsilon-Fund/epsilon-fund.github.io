@@ -306,7 +306,7 @@ strong { color: var(--text-primary); font-weight: 500; }
 
 .hero-eyebrow::before {
   content: '';
-  display: inline-block;
+  display: none;
   width: 28px; height: 1px;
   background: var(--accent);
 }
