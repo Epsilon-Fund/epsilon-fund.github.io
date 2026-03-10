@@ -2,12 +2,12 @@
 layout: page
 title: Our Fund
 description: A systematic, research-driven approach to cryptocurrency markets.
-label: Epsilon Fund
+label: "\u03B5psilon"
 ---
 
 ## Philosophy
 
-Epsilon Fund is built on the belief that crypto markets, despite their volatility, are increasingly amenable to systematic, data-driven approaches. We combine rigorous quantitative research with macro awareness to develop strategies that are robust across market regimes.
+εpsilon is built on the belief that crypto markets, despite their volatility, are increasingly amenable to systematic, data-driven approaches. We combine rigorous quantitative research with macro awareness to develop strategies that are robust across market regimes.
 
 ## Approach
 
@@ -17,7 +17,7 @@ We treat crypto as a 365-day market with unique structural characteristics — p
 
 ## Fund I — In Development
 
-Epsilon Fund I is currently in the research and development phase. The team is focused on building institutional-quality infrastructure, validating strategies across full market cycles, and establishing a track record before external capital is considered.
+εpsilon Fund Alpha is currently in the research and development phase. The team is focused on building institutional-quality infrastructure, validating strategies across full market cycles, and establishing a track record before external capital is considered.
 
 ## Team
 

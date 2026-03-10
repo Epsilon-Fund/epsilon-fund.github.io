@@ -3,14 +3,14 @@
 # ============================================
 
 # Core site settings
-title: Epsilon Fund
+title: "\u03B5psilon"
 description: Systematic crypto research and quantitative strategy development
 url: "https://epsilon-fund.github.io"
 baseurl: ""
 
 # Author info
 author:
-  name: Epsilon Fund
+  name: "\u03B5psilon"
   email: ""
 
 # Build settings

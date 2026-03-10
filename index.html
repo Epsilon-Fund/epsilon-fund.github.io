@@ -12,42 +12,32 @@ title: Home
 <div class="container">
   <section class="hero animate-in">
 
-    <div class="hero-eyebrow">Epsilon Fund</div>
+    <div class="hero-eyebrow">&epsilon;psilon</div>
 
     <h1 class="hero-title">
       Systematic Crypto<br>
       <span class="rotating-words">
         <span class="rotating-word">Research</span>
         <span class="rotating-word">Strategy</span>
-        <span class="rotating-word">Fund</span>
+        <span class="rotating-word">Alpha</span>
+        <span class="rotating-word">Conviction</span>
+        <span class="rotating-word">Edge</span>
       </span>
     </h1>
 
     <p class="hero-description">
-      A <strong>research-driven</strong> crypto fund focused on
-      <strong>quantitative strategy development</strong>,
-      macro analysis, and systematic trading.
-      <span class="hero-status">Fund I in development.</span>
+      A <strong>research-driven</strong> crypto firm building
+      <strong>systematic strategies</strong> through a rigorous
+      <strong>quantitative approach</strong>. Where data meets
+      conviction — and every trade has a thesis.
+    </p>
+    <p class="hero-status-line">
+      <strong>Fund Alpha</strong> — in development.
     </p>
 
     <div class="hero-cta">
       <a href="/fund/" class="btn">Our Fund</a>
       <a href="/research/" class="btn btn--ghost">Read Research</a>
-    </div>
-
-    <div class="hero-stats">
-      <div class="hero-stat">
-        <div class="hero-stat-number"><span class="count-up" data-target="3">0</span><span>+</span></div>
-        <div class="hero-stat-label">Strategies In Development</div>
-      </div>
-      <div class="hero-stat">
-        <div class="hero-stat-number"><span class="count-up" data-target="2">0</span><span>+</span></div>
-        <div class="hero-stat-label">Research Verticals</div>
-      </div>
-      <div class="hero-stat">
-        <div class="hero-stat-number"><span class="count-up" data-target="365">0</span><span class="accent">/yr</span></div>
-        <div class="hero-stat-label">Markets We Cover</div>
-      </div>
     </div>
 
   </section>
@@ -178,28 +168,4 @@ document.addEventListener('mousemove', function(e) {
   glow.style.top  = e.clientY + 'px';
 });
 
-// ── Count-up animation ──
-var counters = document.querySelectorAll('.count-up');
-var observer = new IntersectionObserver(function(entries) {
-  entries.forEach(function(entry) {
-    if (entry.isIntersecting) {
-      var el = entry.target;
-      var target = parseInt(el.dataset.target);
-      var duration = 1200;
-      var step = target / (duration / 16);
-      var current = 0;
-      var timer = setInterval(function() {
-        current += step;
-        if (current >= target) {
-          el.textContent = target;
-          clearInterval(timer);
-        } else {
-          el.textContent = Math.floor(current);
-        }
-      }, 16);
-      observer.unobserve(el);
-    }
-  });
-}, { threshold: 0.5 });
-counters.forEach(function(c) { observer.observe(c); });
 </script>
