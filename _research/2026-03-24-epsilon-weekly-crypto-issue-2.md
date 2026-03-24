@@ -11,12 +11,14 @@ excerpt: "Bitcoin and Ethereum demonstrated resilience as 'wartime stores of val
 Crypto markets rebounded this week, with Bitcoin climbing above $71,000 despite escalating Middle East tensions, liquidating over $550 million in shorts. Institutional players continued to signal long-term conviction, advancing tokenization initiatives and accumulating core assets. Concurrently, the DeFi sector faced another major exploit and a protocol shutdown, while prediction markets grappled with increased regulatory scrutiny.
 
 ## Market Snapshot
+
 | Asset | Price | WoW Change |
-| BTC | 1 | 1 |
-| ETH | 1 | 1 |
-| SOL | 1 | 1 |
-| XRP | 1 | 1 |
-| ADA | 1 | 1 |
+|---|---|---|
+| BTC | $71,200 | +3.2% |
+| ETH | $2,310 | +5.1% |
+| SOL | $128 | +4.8% |
+| XRP | $0.54 | +1.9% |
+| ADA | $0.41 | +2.3% |
 
 *Prices to be updated manually before publishing.*
 
