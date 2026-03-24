@@ -585,23 +585,26 @@ strong { color: var(--text-primary); font-weight: 500; }
   width: 100%;
   border-collapse: collapse;
   margin: 32px 0;
-  font-size: 0.82rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  display: table;
 }
 
 .post-content th {
   text-align: left;
-  padding: 10px 16px;
-  border-bottom: 1px solid var(--border);
+  padding: 12px 16px;
+  border: 1px solid var(--border);
   color: var(--text-muted);
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
+  background: var(--bg-secondary);
 }
 
 .post-content td {
-  padding: 10px 16px;
-  border-bottom: 1px solid var(--border-subtle);
+  padding: 12px 16px;
+  border: 1px solid var(--border);
   color: var(--text-secondary);
 }
 
