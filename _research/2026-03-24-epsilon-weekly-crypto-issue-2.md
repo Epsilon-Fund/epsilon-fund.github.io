@@ -12,12 +12,11 @@ Crypto markets rebounded this week, with Bitcoin climbing above $71,000 despite 
 
 ## Market Snapshot
 | Asset | Price | WoW Change |
-|---|---|---|
-| BTC | | |
-| ETH | | |
-| SOL | | |
-| XRP | | |
-| ADA | | |
+| BTC | 1 | 1 |
+| ETH | 1 | 1 |
+| SOL | 1 | 1 |
+| XRP | 1 | 1 |
+| ADA | 1 | 1 |
 
 *Prices to be updated manually before publishing.*
 
