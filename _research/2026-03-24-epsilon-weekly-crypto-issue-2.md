@@ -1,48 +1,48 @@
 ---
 layout: post
-title: "Epsilon Weekly Crypto — Issue #123"
+title: "Epsilon Weekly Crypto — Issue #1"
 date: 2026-03-24
 category: crypto
 author: A
-excerpt: "Geopolitical tensions drove significant crypto volatility, while institutional tokenization efforts gained momentum despite DeFi exploits."
+excerpt: "Bitcoin and Ethereum demonstrated resilience as 'wartime stores of value' amidst geopolitical tensions, while institutional tokenization gained significant traction."
 ---
 
 ## The Week In One Paragraph
-Geopolitical tensions surrounding the US-Iran conflict dominated markets, causing Bitcoin to swing wildly between $67,500 and $71,500. Despite this macro-driven volatility, institutional adoption continued its strong trajectory, with BlackRock's CEO championing tokenized funds and major firms expanding their crypto treasuries. Concurrently, the DeFi sector faced another significant stablecoin exploit, highlighting persistent security vulnerabilities.
+Crypto markets rebounded this week, with Bitcoin climbing above $71,000 despite escalating Middle East tensions, liquidating over $550 million in shorts. Institutional players continued to signal long-term conviction, advancing tokenization initiatives and accumulating core assets. Concurrently, the DeFi sector faced another major exploit and a protocol shutdown, while prediction markets grappled with increased regulatory scrutiny.
 
 ## Market Snapshot
+
 | Asset | Price | WoW Change |
 |---|---|---|
-| BTC | | |
-| ETH | | |
-| SOL | | |
-| XRP | | |
-| ADA | | |
+| BTC | $71,200 | +3.2% |
+| ETH | $2,310 | +5.1% |
+| SOL | $128 | +4.8% |
+| XRP | $0.54 | +1.9% |
+| ADA | $0.41 | +2.3% |
 
 *Prices to be updated manually before publishing.*
 
 ## Dominant Narrative
-The primary narrative this week centered on crypto's evolving role in a volatile geopolitical landscape, with Bitcoin and Ethereum reacting sharply to developments in the US-Iran conflict. This underscored crypto's emerging perception as a "wartime store of value," while simultaneously accelerating the institutional push for tokenization of real-world assets.
+The dominant narrative this week centered on crypto's emerging role as a "wartime store of value" amidst global instability. Bitcoin and Ethereum notably outperformed traditional risk assets and even gold during heightened geopolitical tensions, with Bitmine's Chairman Thomas Lee explicitly framing ETH's 18% rise since the Iran conflict began as evidence of this resilience. This narrative is reinforced by sustained institutional accumulation despite macro volatility.
 
 ## Key Signals
-- **Geopolitical Sensitivity:** Bitcoin's price experienced rapid swings, dropping $60B in market cap on Trump's threat, then rebounding to $71,500 on de-escalation news, directly correlating with US-Iran conflict developments.
-- **Institutional Accumulation:** Strategy expanded its capital-raising plans to $44.1B for further Bitcoin purchases, acquiring 1,031 BTC last week. Bitmine Immersion Technologies increased ETH holdings by $139M, calling it a "wartime store of value."
-- **Tokenization Momentum:** BlackRock CEO Larry Fink advocated for tokenized funds, Apex tokenized a Bitcoin mining note on Base, and Nasdaq partnered with Talos to address collateral bottlenecks in institutional tokenization.
-- **DeFi Vulnerability:** Resolv's USR stablecoin suffered a $25M exploit due to a compromised key, leading to contagion across DeFi yield vaults and underscoring persistent structural risks. Balancer Labs also announced winding down its corporate entity after a prior $110M exploit.
-- **Prediction Market Regulation:** A bipartisan Senate bill was introduced to ban sports betting on prediction markets, prompting Polymarket and Kalshi to implement stricter insider trading rules.
+-   **Bitcoin Short Liquidations:** Over $550 million in Bitcoin shorts were liquidated as BTC rebounded to $71,000, indicating a squeeze on bearish positioning.
+-   **Institutional Bitcoin Accumulation:** Strategy unveiled plans for $44 billion in capital-raising capacity for Bitcoin purchases, while BlackRock and Fidelity made net BTC purchases last week, contributing to $93.1 million in institutional ETF inflows.
+-   **Institutional Ethereum Buying:** Bitmine Immersion Technologies increased its ETH holdings by $138 million, bringing its total to $11 billion, signaling strong institutional conviction in Ethereum's long-term value.
+-   **Tokenization Momentum:** BlackRock CEO Larry Fink highlighted tokenized funds as the future of Wall Street, with Apex tokenizing a Bitcoin mining note on Base and Nasdaq partnering with Talos to address collateral bottlenecks in institutional tokenization.
+-   **DeFi Exploit Contagion:** Resolv Labs' USR stablecoin suffered a $25 million exploit due to a compromised key, leading to a 74% depeg and subsequent contagion across DeFi yield vaults, highlighting persistent structural risks.
 
 ## Sector Watch
-The **Tokenized Real-World Assets (RWAs)** sector saw significant institutional validation this week. BlackRock CEO Larry Fink explicitly championed tokenized funds, stating they could modernize markets, while Apex tokenized a Bitcoin mining note on Coinbase's Base. Amundi, Europe's largest asset manager, launched its second on-chain fund, and Nasdaq is actively working with Talos to resolve collateral bottlenecks for institutional tokenization. This signals a clear and accelerating trend of traditional finance integrating deeply with blockchain technology, moving beyond simple spot ETFs to building foundational on-chain financial infrastructure.
+The institutional tokenization and AI-agent payments sector saw significant advancements, contrasting with ongoing struggles in parts of DeFi. Apex tokenized a Bitcoin mining note, BlackRock's CEO championed tokenized funds, and Nasdaq partnered with Talos to streamline collateral for tokenized assets. Concurrently, MoonPay and Visa launched wallet standards and payment tools for AI agents, signaling a burgeoning infrastructure for automated on-chain commerce. This forward momentum in institutional and agentic finance underscores a fundamental shift towards broader utility, even as older DeFi models like Balancer Labs (shutting down after a $110M exploit) face existential challenges.
 
 ## Regulation & Macro
-Geopolitical instability, specifically the US-Iran conflict, proved to be a significant macro driver, causing sharp price volatility in crypto assets. Bitcoin's $60 billion market cap swing on Trump's statements highlights this sensitivity, though Bitmine's Tom Lee framed ETH's 18% rise since the conflict began as evidence of crypto's "wartime store of value" narrative. On the regulatory front, the SEC's proposed crypto interpretation is now under White House review, and the latest text of the stablecoin Clarity Act is seen as restrictive for not allowing rewards on balances. Separately, Delaware is advancing a stablecoin licensing framework, and a bipartisan Senate bill targets banning sports betting on prediction markets. These developments indicate a tightening, yet clarifying, regulatory environment, particularly for stablecoins and specific crypto applications.
+Geopolitical tensions in the Middle East remained a primary macro driver, causing initial market volatility before Bitcoin and Ethereum demonstrated resilience. The Federal Reserve held rates steady with a cautiously hawkish tone, impacting broader market sentiment. On the regulatory front, the proposed "Clarity Act" for stablecoins indicated a restrictive approach by not allowing rewards on balances. Separately, a bipartisan Senate bill was introduced to ban sports betting on prediction markets, directly impacting platforms like Polymarket and Kalshi, which responded by tightening insider trading rules.
 
 ## Epsilon's Read
-The market is navigating a complex interplay of macro uncertainty and accelerating institutional integration. While geopolitical events, such as the US-Iran conflict, will continue to inject short-term volatility and drive rapid price swings for BTC, the underlying structural demand for crypto assets and tokenized infrastructure remains a dominant long-term tailwind. BlackRock CEO Larry Fink's strong advocacy for tokenized funds and Apex's move to tokenize a Bitcoin mining note are concrete signals of TradFi's deepening commitment. We maintain a bullish long-term outlook, viewing current volatility as opportunities to accumulate. The consistent buying from entities like Strategy, which plans to raise $44.1 billion for further Bitcoin acquisitions, and Bitmine's strategic accumulation of ETH, suggest strong support for dips and a continued upward trajectory for assets with clear institutional utility.
+The market's ability to absorb significant geopolitical shocks and macro uncertainty this week, with BTC and ETH acting as "wartime stores of value," underscores a growing maturity beyond pure risk-on speculation. Sustained institutional capital inflows into core assets, coupled with aggressive advancements in tokenization and AI-agent payment infrastructure, signal a fundamental long-term re-rating of crypto as a legitimate asset class and foundational technology. While DeFi exploits and regulatory headwinds for niche sectors like prediction markets present localized risks, the broader trend of institutional integration and technological innovation remains robust. We maintain a bullish outlook, viewing current volatility as a strategic entry point for high-conviction assets.
 
 ## Watch Next Week
-- Further developments in the US-Iran geopolitical situation and their impact on oil prices and risk assets.
-- Bitcoin's ability to consolidate and hold above the $70,000 level, especially given recent momentum indicator warnings.
-- Progress on the SEC's crypto interpretation review by the White House and any updates on the stablecoin Clarity Act.
-
+-   **Geopolitical Developments:** Further updates on US-Iran diplomatic talks and any de-escalation or escalation of Middle East tensions.
+-   **Bitcoin Price Action:** Monitor BTC's ability to hold above $70,000 as a key support level, especially in light of the recently triggered momentum indicator signaling potential selloffs.
+-   **Stablecoin Regulatory Progress:** Developments on the "Clarity Act" in the US and Delaware's proposed stablecoin licensing framework.
 ---
