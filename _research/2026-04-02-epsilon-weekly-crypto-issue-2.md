@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Epsilon Weekly Crypto — Issue #1"
+title: "Epsilon Weekly Crypto — Issue #2"
 date: 2026-04-02
 category: crypto
 author: A
@@ -11,15 +11,14 @@ excerpt: "Geopolitical tensions and a major DeFi exploit overshadowed growing in
 Geopolitical tensions in the Middle East drove significant volatility across crypto markets this week, with Bitcoin dipping below $66,000 before a partial recovery. This macro uncertainty was compounded by a major $280M exploit on Solana's Drift Protocol, highlighting persistent security risks in DeFi. Despite these headwinds, institutional adoption continued, marked by Coinbase's conditional OCC trust charter approval and a surge in Real World Asset (RWA) tokenization initiatives.
 
 ## Market Snapshot
+
 | Asset | Price | WoW Change |
 |---|---|---|
-| BTC | | |
-| ETH | | |
-| SOL | | |
-| XRP | | |
-| ADA | | |
-
-*Prices to be updated manually before publishing.*
+| BTC | $68,218 | +3.4% |
+| ETH | $2,145 | +1.9% |
+| SOL | $82.71 | -0.4% |
+| XRP | $1.35 | +0.3% |
+| ADA | $0.30 | -5.0% |
 
 ## Dominant Narrative
 The market narrative was bifurcated this week, oscillating between macro-driven risk-off sentiment due to escalating Middle East tensions and persistent concerns over DeFi security following the $280M Drift Protocol exploit. Simultaneously, the underlying trend of institutional integration and Real World Asset (RWA) tokenization continued to gain momentum, signaling long-term structural adoption despite short-term volatility.
