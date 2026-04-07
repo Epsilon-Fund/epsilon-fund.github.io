@@ -13,7 +13,10 @@ timeframe: "3–7 days"
 position_size: "2%"
 risk_reward: "2.5:1"
 conviction: 6
-status: Open
+status: Closed
+close_date: 2026-04-07
+close_price: "$67,827"
+result: Win
 author: A
 ---
 
@@ -62,3 +65,15 @@ The trade does not benefit from fundamental catalysts — it is a pure technical
 - **Volume profile** — the morning spike came on elevated volume; sustained selling volume on the way down confirms the thesis; low-volume drift lower is less convincing
 - **Macro risk-off / risk-on shifts** — Bitcoin remains correlated to broader risk appetite; any significant equity market move or macro headline is the primary external risk to this setup
 - **$67,500 area** — if price consolidates here rather than pushing straight to $66,500, consider scaling the remainder of TP2 more gradually
+
+## Trade Outcome
+
+Closed April 7 at $67,827 — in profit, with price moving through the TP1 zone and into the lower support area. The thesis resolved correctly: the morning spike was indeed exhaustion, and the downtrend structure reasserted itself within 24 hours.
+
+## Post-Trade Reflection
+
+The trade worked, but the path was messier than anticipated — price came uncomfortably close to the $70,400 stop before reversing. That near-miss is worth examining carefully.
+
+The core tension here is between stop placement logic and intraday volatility reality. The stop was placed correctly on a structural basis — above the trendline and swing high — but the market's behaviour around obvious technical levels is increasingly adversarial. Algos are clearly running stop-hunting strategies that probe beyond clean technical levels before reversing, and a structurally correct stop placed at the "obvious" location is precisely the stop that gets hunted.
+
+Two things worth taking forward. First, consider calibrating stop distance to shorter timeframe volatility rather than anchoring purely to the higher timeframe structure. A stop sized to absorb 1H ATR rather than placed exactly at the 4H level gives the trade room to breathe through the mechanical sweeps without changing the invalidation logic. Second, be more selective about entry quality — the less obvious the setup reads to the crowd, the less likely the stop is sitting in a well-mapped liquidity pool. Setups that emerge from less telegraphed levels, or that are entered on a pullback rather than right at the trendline tag, will naturally sit further from the algos' targets. The thesis was right; the stop placement was too clean. That's the edge to sharpen next time.
