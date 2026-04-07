@@ -13,10 +13,9 @@ timeframe: "3–7 days"
 position_size: "2%"
 risk_reward: "2.5:1"
 conviction: 6
-status: Closed
+status: Won
 close_date: 2026-04-07
 close_price: "$67,827"
-result: Win
 author: A
 ---
 
