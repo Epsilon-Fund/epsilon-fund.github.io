@@ -3,7 +3,7 @@ layout: post
 title: "Epsilon Weekly Macro — Week ending 10 April 2026"
 date: 2026-04-08
 category: macro
-author: Epsilon Research
+author: J
 excerpt: "Geopolitical tensions in the Middle East and concerns over critical mineral supply chains dominated headlines, impacting inflation expectations and market direction, while US economic data showed resilience."
 ---
 
