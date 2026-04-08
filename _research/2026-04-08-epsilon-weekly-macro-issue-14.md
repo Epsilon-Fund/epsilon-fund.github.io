@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Epsilon Weekly Macro — Week ending 10 April 2026"
+title: "Weekly Macro Monitor - Issue #2"
 date: 2026-04-08
 category: macro
 author: J
