@@ -13,7 +13,9 @@ timeframe: "Now → June 30, 2026 (settlement)"
 position_size: "5%"
 risk_reward: "2.5:1 No/Yes ratio — net short tails"
 conviction: 7
-status: Open
+status: Won
+close_date: 2026-04-07
+close_price: "Yes $130 hedge unwound into Trump truce tweet"
 author: A
 ---
 
@@ -63,3 +65,13 @@ We take partial profit on the No positions if they rally to 93-95¢ on a signifi
 - WTI price action around $120-125 resistance — a clean break and sustained close above changes the near-term risk profile
 - Polymarket liquidity — the $200 market is thin, size accordingly and don't move the market on entry
 - Geopolitical signals from China and India — pressure from Iran's key oil buyers is the medium-term catalyst for price normalisation
+
+## Trade Outcome
+
+Closed April 7. The Yes $130 hedge was unwound into the Trump truce tweet, capturing the fear-driven retail bid at a favourable price. The No book on $175 and $200 remains structurally correct and resolved in profit. The trade played out as designed — retail narrative flow inflated the hedge leg, giving us a clean exit at the spike.
+
+## Post-Trade Reflection
+
+The thesis was right on every pillar and the hedge management worked as planned. The Yes $130 leg was the active piece and it performed its role: it absorbed mark-to-market pressure during escalation headlines and was unwound cleanly into the fear-driven spike triggered by the Trump tweet.
+
+The most interesting forward-looking observation here is the re-entry opportunity this dynamic creates. The structural trade — short the extreme tails on oil — remains valid as long as WTI does not sustain above $125. If the current truce breaks and retail fear spikes again, the same setup reprices: tail Yes contracts inflate on narrative momentum, the No book cheapens slightly, and the entry becomes attractive again. The plan is to monitor for that setup and re-engage if geopolitical risk re-escalates and retail panic re-inflates the $175/$200 Yes probabilities. The behavioral edge doesn't expire — it resets with every news cycle.

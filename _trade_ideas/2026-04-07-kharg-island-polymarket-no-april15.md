@@ -13,7 +13,9 @@ timeframe: "April 7 → April 9-10 (primary exit) / April 15 (expiry backstop)"
 position_size: "~$115 core (No April 15) | Contingent hedge TBD — max 30-40% of core notional"
 risk_reward: "~3:1 on base case fade scenario"
 conviction: 8
-status: Open
+status: Won
+close_date: 2026-04-08
+close_price: "No April 15 @ 93¢ (best case scenario — ceasefire signals)"
 author: A
 ---
 
@@ -90,3 +92,13 @@ The spike from 6-7% to 13% happened within minutes of the tweet. These are parti
 - **Iranian response** — capitulation or ceasefire signals collapse April 15 Yes immediately (best case). Defiance and retaliation keep narrative alive (moderate case)
 - **Polymarket liquidity** — the April 15 market at ~$2.5M volume has sufficient depth for this size. Do not chase the spread on entry or exit
 - **Resolution criteria edge** — if and when mainstream coverage of potential Kharg action begins, watch for Polymarket resolvers citing the explicit exclusion of bombardment and raids. Public clarification of resolution standards would accelerate the fade
+
+## Trade Outcome
+
+Closed April 8. Iran signalled concessions overnight, triggering the best case scenario — the April 15 Yes contract collapsed as the ceasefire narrative took hold. Exited No April 15 at 93¢, capturing the full move in under 24 hours. The contingent April 30 Yes hedge was never activated. Clean single-leg trade from entry to exit.
+
+## Post-Trade Reflection
+
+The thesis played out exactly as written — the tweet was a psyop, not a military order, and the resolution criteria made Yes structurally unbuyable at 13%. The best case scenario materialised faster than anticipated.
+
+The most valuable forward-looking note here is the re-entry framework this trade creates. The behavioral dynamic — retail panic-buying Yes contracts on geopolitical headlines without reading resolution criteria — is not a one-time event. It resets with every news cycle. If the current truce breaks and escalation rhetoric returns, the same mispricing will likely re-emerge: retail fear inflates tail Yes probabilities, the No book cheapens, and the entry becomes attractive again. The plan is to monitor for that setup and re-engage if the situation deteriorates. The edge is structural and repeatable as long as Polymarket retail participants continue trading headlines rather than contracts.
