@@ -1,20 +1,31 @@
 ---
 layout: trade
-title: "ECB June 2026 — Buy No Change, Fade the Hike Tape"
+title: ECB June 2026 — Buy No Change, Fade the Hike Tape
 date: 2026-05-12
-author: J
+asset: Polymarket — ECB Interest Rates June 2026
+direction: Long (No Change) / Short (25bps Increase)
+thesis_short: Polymarket prices an 82% combined hike probability at the June 11 ECB meeting vs 19% no change. The 25bps contract repriced from ~50% to 80%+ between May 4-6 on hawkish speeches from Cipollone, Kazimir, Nagel and Patsalides, plus a Bloomberg economist survey now showing two hikes for 2026. We think the move has overshot Lagarde's actual April 30 communication, which explicitly preserved optionality with "not pre-committing to a particular rate path." The May 6-7 round trip — No Change spiking to ~50% intraday before fading overnight — shows the spread is more reflexive than convicted at current levels. Buy No Change at 19¢ as positive expected value with asymmetric payoff.
+entry: No Change @ 19¢
+target_1: No Change → exit at 28-32¢ if Iran ceasefire holds firm into late May and any GC dove (Stournaras, Centeno, Lane) softens the hike tone publicly
+target_2: No Change → hold to expiry if Lagarde repeats the "good place / not pre-committing" framing in pre-meeting communications
+stop: Exit if No Change trades below 10¢ on hawkish data surprise (May HICP flash > 3.2% on May 29, or core ticks back up above 2.3%)
+timeframe: May 12 → June 11 (expiry — 30 days)
+position_size: ~$120-150 notional (~600-800 shares No Change). Moderate-conviction trade fading a strong consensus — sized to reflect that the modal outcome is still a hike
+risk_reward: ~4.3:1 on payoff if base case resolves. Base case probability we estimate at ~25-30% (vs market 19%) — positive EV but modest
+conviction: 7
 status: open
-conviction: 6
-market: Polymarket
-ticker: ECB Interest Rates June 2026
-direction: Long No Change
+author: J
 ---
 
-# ECB June 2026 — Buy No Change at 19¢
 
-Polymarket prices an 82% combined probability of a hike at the June 11 meeting (81% for 25bps, 1% for 50bps+) versus 19% for no change. The 25bps contract repriced from ~50% to 80%+ between May 4 and May 6 on hawkish speeches from Cipollone, Kazimir, Nagel, and Patsalides, plus a Bloomberg economist survey now showing consensus at two hikes for 2026. We think the move has overshot Lagarde's actual April 30 communication, which explicitly preserved optionality and emphasised the "not pre-committing to a particular rate path" framing. The May 6-7 round trip in this market — No Change spiking to ~50% intraday before fading overnight — is evidence that the spread is more reflexive than convicted at current levels. We buy No Change at 19¢ as a positive expected value trade with asymmetric payoff.
+## Why This Trade
 
----
+This is a probability mispricing trade, not a high-conviction directional call. Polymarket prices the June meeting outcome as 82% hike vs 19% no change. Our read of the underlying ECB reaction function — and specifically Lagarde's April 30 communication — puts the no-change probability closer to 25-30%. The 4.3:1 payoff on a 19¢ entry only requires us to be modestly right about the distribution to be positive expected value.
+
+The trade is not a fade of all ECB hawks. The hawkish chorus is real and includes credible centrists: Kazimir on May 4 said a June hike was "highly likely", Nagel sees a case for a hike without marked inflation progress, Patsalides on May 12 told MNI that "things are pointing to a raise in interest rates", and Cipollone on May 6 said the situation was "drifting away from our March baseline projections, which increases the likelihood that we may need to adjust our policy rates." Cipollone's intervention is particularly notable because he is historically a dovish board member.
+
+But the price already discounts this. The trade is on the gap between an 82% market-implied probability of a hike and what we think is closer to a 70-75% base case.
+
 
 ![Polymarket — ECB June 2026 Spread](https://epsilon-fund.github.io/assets/images/ecb-june-2026-polymarket.png)
 
